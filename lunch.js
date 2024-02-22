@@ -1,4 +1,4 @@
- /* Modify the contents of the function below, such that:
+/* Modify the contents of the function below, such that:
  *
  * If we're not hungry, we want to tell ourselves to get back to work.
  * Otherwise, we want to pick something up and eat it in the lab when
@@ -14,19 +14,21 @@
 
 const whatToDoForLunch = function(hungry, availableTime) {
  
-console.log("hungry is", hungry);
+  console.log("hungry is", hungry);
   console.log("availableTime is", availableTime);
-if (hungry == true ) {
-	if (availableTime < 20 ) {
-	console.log( "Pick something up and eat it in the lab");
-	}else if( availableTime >= 20 && availableTime <= 30){
-		console.log(" Try a place nearby")
-	}else {
-		console.log("I am in a bootcamp and I should reconsider how much time I have to spare");}
-}else {
-	console.log("Get back to work") }
+  if (hungry === true) {
+    if (availableTime < 20) {
+      console.log("Pick something up and eat it in the lab");
+    } else if (availableTime >= 20 && availableTime <= 30) {
+      console.log("Try a place nearby");
+    } else {
+      console.log("I am in a bootcamp and I should reconsider how much time I have to spare");
+    }
+  } else {
+    console.log("Get back to work");
+  }
 
-}
+};
 
 
 /*
